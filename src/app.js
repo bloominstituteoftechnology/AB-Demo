@@ -1,14 +1,11 @@
 'use strict';
 
 
-var Greeting = React.createClass({
-    render: function() {
-        return (
-            React.createElement('h1', null, 'Hello, React!')
-          );
-    }
-  });
-
+function myFunction() {
+    console.log('myFunction')
+    document.getElementById("show-react").style.color = "red";
+    document.getElementById("show-react").style.background = "green";
+}
 
 
 const e = React.createElement;
