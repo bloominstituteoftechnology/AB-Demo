@@ -1,15 +1,25 @@
 'use strict';
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom';
+// import React, { Component } from 'react'
+// import ReactDOM from 'react-dom';
 
 function myFunction() {
-    console.log('myFunction')
-    document.getElementById("show-react").style.color = "red";
-    document.getElementById("show-react").style.background = "green";
+    // console.log('myFunction')
+    // document.getElementById("show-react").style.color = "red";
+    // document.getElementById("show-react").style.background = "green";
+    const domContainer = document.querySelector('#show-react');
+    ReactDOM.render(e(LikeButton), domContainer);
 }
 
-
 const e = React.createElement;
+const like = e(
+    'h1',
+    {},
+    'You Like This') 
+const likeq = e(
+    'h1',
+    {},
+    'like this?'
+)
 
 class LikeButton extends React.Component {
   constructor(props) {
@@ -18,17 +28,15 @@ class LikeButton extends React.Component {
   }
 
   render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
 
     return e(
       'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
+      { onClick: () => this.setState({ liked: !this.state.liked }) },
+      this.state.liked ? like : likeq
+      
     );
     }
 }
 
-const domContainer = document.querySelector('#show-react');
-ReactDOM.render(e(LikeButton), domContainer);
+
+
