@@ -1,5 +1,6 @@
 'use strict';
-
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom';
 
 function myFunction() {
     console.log('myFunction')
