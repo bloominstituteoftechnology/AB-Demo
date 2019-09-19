@@ -7,7 +7,7 @@
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-         ga('create', 'UA-130171934-1', {  // TODO - replace the UA tracking ID!
+         ga('create', 'UA-148351573-1', {  // TODO - replace the UA tracking ID!
             'cookieDomain': 'none'
          });
         </script>
@@ -30,15 +30,15 @@
          experiment1: [
              {
                  name: 'variant1',
-                 'experiment1_text': 'Pretty please click the button with sugar on top!',
+                 'experiment1_text': 'If you click this button, Trump will win reelection!',
                  'experiment1_button':
-                       '<input type="button" value="Click me!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'nice\'); alert(\'Thanks!\');">'
+                       '<input type="button" style="background-color:red; border-color:none; color:black" value="Four more years!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'wins\'); alert(\'May you live a life without regrets.!\');">'
              },
              {
                  name: 'variant2',
-                 'experiment1_text': 'You better click that button...',
+                 'experiment1_text': 'If you click this button, Trump will lose reelection!',
                  'experiment1_button':
-                       '<input type="button" value="Click me, OR ELSE" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You will be spared.\');">'
+                       '<input type="button" style="background-color:blue; border-color:none; color:white" value="Change, if you believe" onclick="ga(\'send\', \'event\', \'buttonclick\', \'loses\'); alert(\'I did not say who would beat him...\');">'
              }
          ]
      });
