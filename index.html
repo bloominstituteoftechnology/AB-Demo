@@ -39,7 +39,19 @@
                  'experiment1_text': 'You better click that button...',
                  'experiment1_button':
                        '<input type="button" value="Click me, OR ELSE" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You will be spared.\');">'
-             }
+             },
+             {
+                 name: 'variant3',
+                 'experiment1_text': 'Ooooooooh, buuuudddyy, if you do ANYTHING other than click that button! OOOOOOOOOHHHHHHH MAN...',
+                 'experiment1_button':
+                       '<input type="button" value="Click me!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'nice\'); alert(\'...Good.\');">'
+             },
+             {
+                 name: 'variant4',
+                 'experiment1_text': 'You better close out this page...',
+                 'experiment1_button':
+                       '<input type="button" value="Click me, OR ELSE" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'This is what you get for not listening, you get this little message...\');">'
+             },
          ]
      });
      ga('send', 'pageview');
