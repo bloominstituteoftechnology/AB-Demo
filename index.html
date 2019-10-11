@@ -7,7 +7,7 @@
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-         ga('create', 'UA-130171934-1', {  // TODO - replace the UA tracking ID!
+         ga('create', 'UA-72139306-2', {  // TODO - replace the UA tracking ID!
             'cookieDomain': 'none'
          });
         </script>
@@ -39,7 +39,14 @@
                  'experiment1_text': 'You better click that button...',
                  'experiment1_button':
                        '<input type="button" value="Click me, OR ELSE" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You will be spared.\');">'
+             },
+             {
+                 name: 'variant3',
+                 'experiment1_text': 'CLICK TO WIN $1,000,000',
+                 'experiment1_button':
+                       '<input type="button" value="Feeling Lucky?" onclick="ga(\'send\', \'event\', \'buttonclick\', \'greedy\'); alert(\'Work harder in school and your dreams will be fulfilled\');">'
              }
+             
          ]
      });
      ga('send', 'pageview');
