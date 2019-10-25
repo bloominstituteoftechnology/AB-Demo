@@ -7,7 +7,7 @@
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-         ga('create', 'UA-130171934-1', {  // TODO - replace the UA tracking ID!
+         ga('create', 'UA-148321118-1', {  // TODO - replace the UA tracking ID!
             'cookieDomain': 'none'
          });
         </script>
@@ -16,6 +16,7 @@
     </head>
 
     <body>
+        ok
         <div class="experiment1_text">
             This content will be replaced by ABalytics
         </div>
@@ -23,6 +24,13 @@
         <form class="experiment1_button">
             This will be replaced too, with a button for the form
         </form>
+        <FORM><INPUT TYPE="button" VALUE="Close Window" onClick="window.close()"></FORM<br />
+ok
+            
+            
+            
+            
+            
     </body>
 
     <script type="text/javascript">
@@ -30,15 +38,15 @@
          experiment1: [
              {
                  name: 'variant1',
-                 'experiment1_text': 'Pretty please click the button with sugar on top!',
+                 'experiment1_text': 'It's so easy, click!',
                  'experiment1_button':
-                       '<input type="button" value="Click me!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'nice\'); alert(\'Thanks!\');">'
+                       '<input type="button" value="One could Click this in their sleep!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'nice\'); alert(\'Thanks!\');">'
              },
              {
                  name: 'variant2',
-                 'experiment1_text': 'You better click that button...',
+                 'experiment1_text': 'It's only a click away...',
                  'experiment1_button':
-                       '<input type="button" value="Click me, OR ELSE" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You will be spared.\');">'
+                       '<input type="button" value="Go ahead, click it!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You only live once.\');">'
              }
          ]
      });
